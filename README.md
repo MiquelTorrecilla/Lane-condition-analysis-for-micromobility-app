@@ -60,5 +60,7 @@ In the directory CFG we have the configs for the two models.
 Compute Results is the code you have to execute to obtain the F1SCORE for the two models per classes.
 You have to upload the bboxes obtain with the two models. The bboxes are in the Results directory.
 
+## Extra information
+
 All the epochs training and curves are in the server. You have it in the workspace/mmdetection/results.
 In the server you also have the CFGs in workspace/mmdetection/CFG.
