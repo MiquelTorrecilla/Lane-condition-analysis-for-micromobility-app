@@ -15,19 +15,27 @@ For the training part we recomend to use it on the serverof TSC.
 
 ## Training in the server
 
-first you need to create a virtualenv, execute all this orders:
+**first you need to create a virtualenv, execute all this orders:**
 
 virtualenv --python=/usr/bin/python3.9 ~/venv/mm2
+
 source ~/venv/mm2/bin/activate
+
 srun --mem 6G --gres=gpu:1 --time=10:00:00 pip install torch torchvision
+
 srun --mem 6G --gres=gpu:1 --time=10:00:00 pip install mmcv-full -f https://download.openmmlab.com/mmcv/dist/102/1.8.1/index.html
+
 cd workspace
+
 git clone https://github.com/open-mmlab/mmdetection.git
+
 srun --mem 6G --gres=gpu:1 --time=10:00:00 pip install -r requirements/build.txt
+
 srun --mem 6G --gres=gpu:1 --time=10:00:00 pip install -v -e .
+
 srun --mem 6G --gres=gpu:1 --time=10:00:00 python test.py
 
-Then you need to execute this orders so you can train the detectors:
+**Then you need to execute this orders so you can train the detectors:**
 
 *We have created a virtualenv named mm3.*
 
@@ -46,8 +54,10 @@ srun --mem 6G --gres=gpu:1 --time=10:00:00 python CascadeRCNN.py
 In the directory CFG we have the configs for the two models.
 
 ## Results
+*we recommend to use it in google colab*
 
 Compute Results is the code you have to execute to obtain the F1SCORE for the two models per classes.
+Yo have to upload the bboxes obtain with the two models. The bboxes are in the Results directory.
 
 
 
