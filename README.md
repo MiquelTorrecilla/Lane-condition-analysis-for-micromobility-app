@@ -10,7 +10,7 @@ Three solutions were devised to determine which one best suited the needs of the
 ## Main
 *We recommend to use it in google colab*
 
-This file have all the code to train, modify the configs, show some results, make use of the Non-maxima suppresion and compute mAP for the two models.
+This file has all the code to train, modify the configs, show some results, make use of the Non-maxima suppresion and compute mAP for the two models.
 For the training part we recomend to use it on the serverof TSC.
 
 ## Training in the server
