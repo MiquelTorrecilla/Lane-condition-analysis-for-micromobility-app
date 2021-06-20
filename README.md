@@ -8,7 +8,7 @@ Three solutions were devised to determine which one best suited the needs of the
 
 
 ## Main
-'We recommend to use it in google colab'
+' We recommend to use it in google colab '
 
 This file have all the code to train, modify the configs, show some results, make use of the Non-maxima suppresion and compute mAP for the two models.
 For the training part we recomend to use it on the serverof TSC.
@@ -29,7 +29,7 @@ srun --mem 6G --gres=gpu:1 --time=10:00:00 python test.py
 
 Then you need to execute this orders so you can train the detectors:
 
-'We have created a virtualenv named mm3.'
+' We have created a virtualenv named mm3. '
 
 module load cudnn/7.4 cuda/10.2
 
