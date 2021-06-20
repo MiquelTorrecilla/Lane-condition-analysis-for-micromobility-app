@@ -7,11 +7,11 @@ In this sense the solution presented proposes to make use of Deep Learning and C
 Three solutions were devised to determine which one best suited the needs of the project. The first two to test the two models separately and the third one with the intention of combining them, with ensemble learning techniques, to try to improve the results obtained.
 
 
-##Train
+## Train
 
-##Results
+## Results
 
-##Compute results metrics
+## Compute results metrics
 
 
 
