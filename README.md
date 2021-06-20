@@ -15,11 +15,11 @@ For the training part we recomend to use it on the serverof TSC.
 
 ## Training in the server
 
-**first you need to create a virtualenv, execute all this orders:**
+**First you need to create a virtualenv, execute all this orders:**
 
-virtualenv --python=/usr/bin/python3.9 ~/venv/mm2
+virtualenv --python=/usr/bin/python3.9 ~/venv/mm3
 
-source ~/venv/mm2/bin/activate
+source ~/venv/mm3/bin/activate
 
 srun --mem 6G --gres=gpu:1 --time=10:00:00 pip install torch torchvision
 
@@ -51,14 +51,14 @@ srun --mem 6G --gres=gpu:1 --time=10:00:00 python FasterRCNN.py
 
 srun --mem 6G --gres=gpu:1 --time=10:00:00 python CascadeRCNN.py
 
+## Models configs
 In the directory CFG we have the configs for the two models.
 
 ## Results
-*we recommend to use it in google colab*
+*We recommend to use it in google colab*
 
 Compute Results is the code you have to execute to obtain the F1SCORE for the two models per classes.
-Yo have to upload the bboxes obtain with the two models. The bboxes are in the Results directory.
+You have to upload the bboxes obtain with the two models. The bboxes are in the Results directory.
 
-
-
-
+All the epochs training and curves are in the server. You have it in the workspace/mmdetection/results.
+In the server you also have the CFGs in workspace/mmdetection/CFG.
