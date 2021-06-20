@@ -7,7 +7,7 @@ In this sense the solution presented proposes to make use of Deep Learning and C
 Three solutions were devised to determine which one best suited the needs of the project. The first two to test the two models separately and the third one with the intention of combining them, with ensemble learning techniques, to try to improve the results obtained.
 
 
-## Main
+## Main.ipynb
 *We recommend to use it in google colab*
 
 This file has all the code to train, modify the configs, show some results, make use of the Non-maxima suppresion and compute mAP for the two models.
@@ -57,7 +57,7 @@ In the directory CFG we have the configs for the two models.
 ## Results
 *We recommend to use it in google colab*
 
-Compute Results is the code you have to execute to obtain the F1SCORE for the two models per classes.
+Compute_Results.ipynb is the code you have to execute to obtain the F1SCORE for the two models per classes.
 You have to upload the bboxes obtain with the two models. The bboxes are in the Results directory.
 
 ## Extra information
